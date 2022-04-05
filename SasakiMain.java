@@ -9,9 +9,9 @@ public class SasakiMain{
 		char[][] mapCreates = new char[height][width];
 		for(int i=0;i<mapCreates.length;i++){
 			for(int j=0;j<mapCreates[i].length;j++){
-				int random = new Random().nextInt(4);
+				int random = new Random().nextInt(maps.length);
 				mapCreates[i][j] = maps[random];
-				System.out.print(mapCreates[i][j]+" ");
+				System.out.print(mapCreates[i][j]);
 			}
 			System.out.println();
 		}
